@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book List project with oop</title>
+
+    <style>
+
+        .success,.error{
+            color:white;
+            padding: 5px;
+            margin:5px 0px 15px 0
+        }
+
+        .success{
+            background-color:green;
+            text-align: center;
+        }
+        .error{
+            background-color:#ff0f0f;
+
+             display:flex; 
+            /* text-align:center;  */
+            justify-content:center;
+            align-items:center;
+            height:100%;
+        }
+    </style>
+
+    <!-- skeleton css framework cdn(like bootstrap,material css) -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Add Book</h1>
+        <form id = "book-form">
+
+            <div>
+                <label for="title">Title</label>
+                <!-- nicher class = "u-full-width holo skeleton css er class er fole input field ti 100% nibe mane block element hobe!" -->
+                <input type="text" id = "title" class = "u-full-width">
+
+            </div>
+
+
+
+            <div>
+                <label for="author">Author</label>
+                <!-- nicher class = "u-full-width holo skeleton css er class er fole input field ti 100% nibe mane block element hobe!" -->
+                <input type="text" id = "author" class = "u-full-width">
+
+            </div>
+
+
+            
+            <div>
+                <label for="isbn">ISBN#</label>
+                <!-- nicher class = "u-full-width holo skeleton css er class er fole input field ti 100% nibe mane block element hobe!" -->
+                <input type="text" id = "isbn" class = "u-full-width">
+
+            </div>
+
+
+            <div>
+                <input type="submit" value="Submit" class="u-full-width">
+            </div>
+
+
+
+
+        </form>
+
+        <table class="u-full-width">
+            <thead>
+                <tr>
+               <th>Title</th>
+               <th>Author</th>
+               <th>ISBN</th>
+               <th></th>
+
+            </tr>
+
+
+            </thead>
+
+            <!-- nicher tbody er moddei ami dynamically data add korbo,remove korbo tai eta faka rekechi-->
+
+
+            <tbody id="book-list"></tbody>
+
+
+
+        </table>
+
+
+
+    </div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src = "appes6.js">
+
+
+    </script>
+</body>
+</html>
